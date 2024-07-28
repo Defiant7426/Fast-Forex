@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f0f0f0;
+}
+
+.converter {
+    width: 950px;
+    /*height: 300px;*/ 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.converter input{
+    width: 80px;
+    height: 20px;
+    margin: 20px 10px 0px 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.converter button {
+    width: 90px;
+    height: 42px;
+    margin: 20px 0 0 0;
+    padding: 10px;
+    background-color: #5a9ce3;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-select-container {
+    position: relative;
+    width: 250px;
+    margin: 20px 0;
+    
+}
+
+.custom-select-selected {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.custom-select-selected img {
+    margin-right: 8px;
+}
+
+.custom-select-options {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.custom-option {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.custom-option:hover {
+    background-color: #f1f1f1;
+}
+
+.custom-option img {
+    margin-right: 8px;
+}
+
+#result {
+    font-family: Arial, sans-serif;
+    color: rgb(29, 28, 28);
+    font-size: 50px;
+}
+
+#result-from {
+    font-family: Arial, sans-serif;
+    color: rgba(29, 28, 28, 0.7);
+    font-size: 22px;
+}
+
+#aditional-info {
+    font-family: Arial, sans-serif;
+    color: rgba(29, 28, 28, 0.7);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#flechas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    width: 70px;
+    height: 70px;
+}

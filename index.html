@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Forex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="converter">
+        <h1>Fast Forex</h1>
+
+        <div class="container">
+            <input type="number" id="amount" placeholder="Amount">
+
+            <div class="custom-select-container" id="from-custom-select-container">
+                <div class="custom-select-selected">Select Currency</div>
+                <div class="custom-select-options"></div>
+            </div>
+            
+            <img src="img/flechas.png" alt="arrow" id="flechas">
+
+            <div class="custom-select-container" id="to-custom-select-container">
+                <div class="custom-select-selected">Select Currency</div>
+                <div class="custom-select-options"></div>
+            </div>
+
+            <button onclick="convert()">Convert</button>
+        </div>
+        
+        <p id="result-from"></p>
+        <p id="result"></p>
+        <p id="aditional-info"></p>
+
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+    <script type="module">
+        import { convert } from './js/main.js';
+        window.convert = convert;
+    </script>
+</body>
+
+</html>
